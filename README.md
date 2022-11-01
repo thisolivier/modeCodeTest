@@ -1,3 +1,6 @@
+# Bitcoin Refactor Test
+
+## OG Instructions
 This project contains an isolated problem that we need to solve. It doesn't have any network communication, 
 and it only shows the state of the data sources.
 
@@ -11,3 +14,9 @@ You need to apply pragmatic judgment and use practices you would expect to have 
 
 If you run out of time, please briefly describe what else you would do.
 
+## Discovery Period
+App is designed to show the current market price of Bitcoin (and its change in price in GBP and as a %).
+I can also see the current value of my total BTC investment, a list of my contributions, the interest and all time return. 
+I'm not sure how interest and return would differ, nor why itemised investments would track individual all time returns independenly from the total pot value. I will need to answer these.
+
+I'm curious what this iscolated problem is. "contains an isolated problem that we need to solve"

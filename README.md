@@ -20,3 +20,9 @@ I can also see the current value of my total BTC investment, a list of my contri
 I'm not sure how interest and return would differ, nor why itemised investments would track individual all time returns independenly from the total pot value. I will need to answer these.
 
 I'm curious what this iscolated problem is. "contains an isolated problem that we need to solve"
+
+Goals: 
+- Fix the use of Enums (do not duplicate the information directly into the views)
+- Possibly move Enums to the view model (
+- Review nested single item stacks with padding (there should be a more efficient option)
+- 

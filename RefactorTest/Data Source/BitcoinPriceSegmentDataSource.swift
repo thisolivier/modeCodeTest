@@ -1,12 +1,6 @@
 import Combine
 import SwiftUI
 
-public enum StockDirection {
-    case increase
-    case noChange
-    case decrease
-}
-
 class BitcoinPriceSegmentDataSource: ObservableObject, GenericAssetDataSourceProtocol {
     @Published var assetTotalAmount: String
     @Published var assetChangeAmount: String

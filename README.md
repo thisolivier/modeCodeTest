@@ -23,6 +23,12 @@ I'm curious what this iscolated problem is. "contains an isolated problem that w
 
 Goals: 
 - Fix the use of Enums (do not duplicate the information directly into the views)
-- Possibly move Enums to the view model (
-- Review nested single item stacks with padding (there should be a more efficient option)
-- 
+- Break up AssetSubAmountView
+- Make view models for each view
+- Split the view hierachy so portfolio vs assets are on their own branches of the view hierachy
+
+## Reflections
+
+My goal was to restructure the app so we weren't maintaining multiple unrelated views within the same parent depending on dynamic data.
+This would involve creating atomic views with their own view models, keeping better inferface segregation.
+Unfortunately I have not been able to design child view models which maintain the dynamic properties of the original. In retrospect, loosing the reactive component and rebuilding it after sorting the view structure & POS view models could have been a better approach.

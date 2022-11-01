@@ -1,5 +1,22 @@
 import SwiftUI
 
+class PortfolioSubAmountViewModel: ObservableObject {
+    @Published var sections: []
+}
+
+struct PortfolioSubAmount {
+    var title: String
+    var content: PortfolioSubAmountContent
+}
+
+struct PortfolioSubAmountContent {
+    var text: String
+    var colour: Color
+    var image: Image
+}
+
+
+
 struct AssetsSubAmountView: View {
     @Binding var bitcoinPriceSegmentDataSource: BitcoinPriceSegmentDataSource
     @Binding var portfolioSegmentDataSource: PorfolioSegmentDataSource
@@ -46,6 +63,7 @@ struct AssetsSubAmountView: View {
             }
         }
     }
+
 
     @ViewBuilder
     private func generatePortfolioSubAmounts() -> some View {
@@ -158,5 +176,6 @@ struct AssetsSubAmountView_Previews: PreviewProvider {
                 assetSegment: .bitcoinPrice
             )
         }
+        .previewLayout(.sizeThatFits)
     }
 }

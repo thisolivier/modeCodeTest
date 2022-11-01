@@ -1,7 +1,7 @@
 import Combine
 
 // TODO: This enum is being used in very stange ways, see line 25 here, and generatePortfolioSubAmounts in AssetSubAmountView
-enum PorfolioSubAmountTitle: String {
+enum PorfolioSubAmountTitle: String, CaseIterable {
     case invested = "Contributions"
     case interest = "Interest"
     case `return` = "All time return"
@@ -22,7 +22,7 @@ class PorfolioSegmentDataSource: ObservableObject, GenericAssetDataSourceProtoco
     // Title Strings
     // TODO: Deduplicate this from the portifolio amount titles.
     // Note: Is never modified, does not need to be published.
-    @Published var porfolioSubAmountTitles = ["Contributions", "Interest", "All time return"]
+    //@Published var porfolioSubAmountTitles = ["Contributions", "Interest", "All time return"]
 
     private static let defaultCurrenyAmount = "£0.00"
 

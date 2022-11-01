@@ -20,7 +20,7 @@
 		0A914AD026CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914ACF26CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift */; };
 		0A914AD226CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD126CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift */; };
 		0A914AD426CFF16F00B9F4F2 /* AssetsSubAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD326CFF16F00B9F4F2 /* AssetsSubAmountView.swift */; };
-		0A914AD626CFF2B500B9F4F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD526CFF2B500B9F4F2 /* ViewModel.swift */; };
+		0A914AD626CFF2B500B9F4F2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD526CFF2B500B9F4F2 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 		0A914ACF26CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAssetDataSourceProtocol.swift; sourceTree = "<group>"; };
 		0A914AD126CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorfolioSegmentDataSource.swift; sourceTree = "<group>"; };
 		0A914AD326CFF16F00B9F4F2 /* AssetsSubAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsSubAmountView.swift; sourceTree = "<group>"; };
-		0A914AD526CFF2B500B9F4F2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0A914AD526CFF2B500B9F4F2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,26 @@
 			isa = PBXGroup;
 			children = (
 				0A914ACB26CFF00A00B9F4F2 /* AssetSegmentControl.swift */,
+				098B874F29116CE100D0D536 /* StockDirection.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0916B9C829118B7C008BB290 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				0A914AD526CFF2B500B9F4F2 /* ContentViewModel.swift */,
+				0A914AA026CFEF6B00B9F4F2 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		0916B9C929118C4C008BB290 /* AssetsAmountTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				0A914AC926CFEFCB00B9F4F2 /* AssetsAmountTitleView.swift */,
+			);
+			path = AssetsAmountTitleView;
 			sourceTree = "<group>";
 		};
 		0A914A9226CFEF6B00B9F4F2 = {
@@ -121,7 +139,6 @@
 			children = (
 				0916B9C729118124008BB290 /* Model */,
 				0A914AD926CFF40900B9F4F2 /* Views */,
-				0A914AD826CFF3F600B9F4F2 /* View Model */,
 				0A914AD726CFF3E200B9F4F2 /* Data Source */,
 				0A914A9E26CFEF6B00B9F4F2 /* RefactorTestApp.swift */,
 				0A914AA226CFEF6C00B9F4F2 /* Assets.xcassets */,
@@ -160,27 +177,18 @@
 		0A914AD726CFF3E200B9F4F2 /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
-				0A914ACD26CFF07200B9F4F2 /* BitcoinPriceSegmentDataSource.swift */,
 				0A914ACF26CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift */,
+				0A914ACD26CFF07200B9F4F2 /* BitcoinPriceSegmentDataSource.swift */,
 				0A914AD126CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift */,
-				098B874F29116CE100D0D536 /* StockDirection.swift */,
 			);
 			path = "Data Source";
-			sourceTree = "<group>";
-		};
-		0A914AD826CFF3F600B9F4F2 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				0A914AD526CFF2B500B9F4F2 /* ViewModel.swift */,
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		0A914AD926CFF40900B9F4F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0A914AA026CFEF6B00B9F4F2 /* ContentView.swift */,
-				0A914AC926CFEFCB00B9F4F2 /* AssetsAmountTitleView.swift */,
+				0916B9C829118B7C008BB290 /* ContentView */,
+				0916B9C929118C4C008BB290 /* AssetsAmountTitleView */,
 				0A914AD326CFF16F00B9F4F2 /* AssetsSubAmountView.swift */,
 			);
 			path = Views;
@@ -316,7 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A914AD426CFF16F00B9F4F2 /* AssetsSubAmountView.swift in Sources */,
-				0A914AD626CFF2B500B9F4F2 /* ViewModel.swift in Sources */,
+				0A914AD626CFF2B500B9F4F2 /* ContentViewModel.swift in Sources */,
 				0A914ACC26CFF00A00B9F4F2 /* AssetSegmentControl.swift in Sources */,
 				0A914AD026CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift in Sources */,
 				098B875029116CE100D0D536 /* StockDirection.swift in Sources */,

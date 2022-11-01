@@ -1,16 +1,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = ViewModel()
+    @StateObject var viewModel = ContentViewModel()
     
     var body: some View {
         VStack {
             assetSelector
-            AssetsAmountTitleView(
-                selectedAsset: $viewModel.selected,
-                bitcoinPriceDataSource: $viewModel.bitcoinPriceSegmentDataSource,
-                portfolioDataSource: $viewModel.portfolioSegmentDataSource
-            )
+            AssetsAmountTitleView(viewModel: )
             Spacer()
         }
     }

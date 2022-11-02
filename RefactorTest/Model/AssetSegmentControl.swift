@@ -1,29 +1,11 @@
 import Foundation
 
-// TODO: This is not a view, should not be in with the views. This is a application level model.
 enum AssetSegmentControl: CaseIterable {
-    // TODO: [OLIVIER] In connection with ContentView: 28, we have a hard coded number of sections.
-    case portfolio //= 0
-    case bitcoinPrice //= 1
+    case portfolio
+    case bitcoinPrice
+}
 
-    func segmentDeterminator(controlSection: Int) -> AssetSegmentControl {
-        if controlSection == 0 {
-            return .portfolio
-        } else if controlSection == 1 {
-            return .bitcoinPrice
-        }
-        return .portfolio
-    }
-
-    var controlSection: Int {
-        switch self {
-        case .portfolio:
-            return 0
-        case .bitcoinPrice:
-            return 1
-        }
-    }
-
+extension AssetSegmentControl {
     var segmentTitle: String {
         switch self {
         case .portfolio:
@@ -41,7 +23,8 @@ enum AssetSegmentControl: CaseIterable {
             return "Bitcoin Price"
         }
     }
-    
+
+    // Note: Function is not referenced, flagged for removal pending approval
     func amountOnTitle(formattedDate: String) -> String {
         switch self {
         case .portfolio:

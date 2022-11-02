@@ -1,28 +1,10 @@
 import SwiftUI
 
 struct AssetsAmountTitleView: View {
-
-    @ObservedObject var viewModel: OtherViewModel
-
-//    @Binding var selectedAsset: AssetSegmentControl
-//    @Binding var bitcoinPriceDataSource: BitcoinPriceSegmentDataSource
-//    @Binding var portfolioDataSource: PorfolioSegmentDataSource
+    @ObservedObject var viewModel: AssetsAmountTitleViewModel
     
     var body: some View {
-        HStack {
-            amountView()
-                .padding(.leading, 7)
-            Spacer()
-        }
-        .padding(.leading, 30)
-        .padding(.top, 7)
-    }
-    
-    private func amountView() -> some View {
-        VStack(alignment: .leading, spacing: 15) {
-            titleSection()
-            //constructAssetsSubAmountView()
-        }
+        titleSection()
     }
     
     // MARK: - Amount Title section
@@ -35,30 +17,18 @@ struct AssetsAmountTitleView: View {
                 .font(.title2)
         }
     }
-    
-//    private func constructAssetsSubAmountView() -> AssetsSubAmountView {
-//        AssetsSubAmountView(
-//            bitcoinPriceSegmentDataSource: $bitcoinPriceDataSource,
-//            portfolioSegmentDataSource: $portfolioDataSource,
-//            assetSegment: selectedAsset
-//        )
-//    }
 }
 
-//struct AssetsAmountTitleView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Group {
-//            AssetsAmountTitleView(
-//                selectedAsset: .constant(AssetSegmentControl.bitcoinPrice),
-//                bitcoinPriceDataSource: .constant(.init()),
-//                portfolioDataSource: .constant(.init())
-//            )
-//            AssetsAmountTitleView(
-//                selectedAsset: .constant(AssetSegmentControl.portfolio),
-//                bitcoinPriceDataSource: .constant(.init()),
-//                portfolioDataSource: .constant(.init())
-//            )
-//        }
-//        .previewLayout(.sizeThatFits)
-//    }
-//}
+struct AssetsAmountTitleView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            AssetsAmountTitleView(viewModel: .init(title: "Test Title", subtitle: "$12.99"))
+            AssetsAmountTitleView(
+                viewModel: .init(title: "Bonus", subtitle: "$3121009.44")
+            )
+            .preferredColorScheme(.dark)
+
+        }
+        .previewLayout(.sizeThatFits)
+    }
+}

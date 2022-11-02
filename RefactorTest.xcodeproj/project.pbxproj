@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0916B9CD2911AEC0008BB290 /* AssetsAmountTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916B9CC2911AEC0008BB290 /* AssetsAmountTitleViewModel.swift */; };
+		0916B9CF2911AFC7008BB290 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916B9CE2911AFC7008BB290 /* ContentViewModel.swift */; };
+		0916B9D12911C894008BB290 /* AssetValueDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916B9D02911C894008BB290 /* AssetValueDescriptionView.swift */; };
+		0916B9D42911D571008BB290 /* AssetValueDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916B9D32911D571008BB290 /* AssetValueDescriptionViewModel.swift */; };
+		0916B9D72911DDB0008BB290 /* PortfolioAssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916B9D62911DDB0008BB290 /* PortfolioAssetsViewModel.swift */; };
 		098B875029116CE100D0D536 /* StockDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B874F29116CE100D0D536 /* StockDirection.swift */; };
 		0A914A9F26CFEF6B00B9F4F2 /* RefactorTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914A9E26CFEF6B00B9F4F2 /* RefactorTestApp.swift */; };
 		0A914AA126CFEF6B00B9F4F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AA026CFEF6B00B9F4F2 /* ContentView.swift */; };
@@ -19,8 +24,8 @@
 		0A914ACE26CFF07200B9F4F2 /* BitcoinPriceSegmentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914ACD26CFF07200B9F4F2 /* BitcoinPriceSegmentDataSource.swift */; };
 		0A914AD026CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914ACF26CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift */; };
 		0A914AD226CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD126CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift */; };
-		0A914AD426CFF16F00B9F4F2 /* AssetsSubAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD326CFF16F00B9F4F2 /* AssetsSubAmountView.swift */; };
-		0A914AD626CFF2B500B9F4F2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD526CFF2B500B9F4F2 /* ContentViewModel.swift */; };
+		0A914AD426CFF16F00B9F4F2 /* PortfolioAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD326CFF16F00B9F4F2 /* PortfolioAssetsView.swift */; };
+		0A914AD626CFF2B500B9F4F2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A914AD526CFF2B500B9F4F2 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0916B9CC2911AEC0008BB290 /* AssetsAmountTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsAmountTitleViewModel.swift; sourceTree = "<group>"; };
+		0916B9CE2911AFC7008BB290 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0916B9D02911C894008BB290 /* AssetValueDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetValueDescriptionView.swift; sourceTree = "<group>"; };
+		0916B9D32911D571008BB290 /* AssetValueDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetValueDescriptionViewModel.swift; sourceTree = "<group>"; };
+		0916B9D62911DDB0008BB290 /* PortfolioAssetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAssetsViewModel.swift; sourceTree = "<group>"; };
 		098B874F29116CE100D0D536 /* StockDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDirection.swift; sourceTree = "<group>"; };
 		0A914A9B26CFEF6B00B9F4F2 /* RefactorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A914A9E26CFEF6B00B9F4F2 /* RefactorTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactorTestApp.swift; sourceTree = "<group>"; };
@@ -59,8 +69,8 @@
 		0A914ACD26CFF07200B9F4F2 /* BitcoinPriceSegmentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceSegmentDataSource.swift; sourceTree = "<group>"; };
 		0A914ACF26CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAssetDataSourceProtocol.swift; sourceTree = "<group>"; };
 		0A914AD126CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorfolioSegmentDataSource.swift; sourceTree = "<group>"; };
-		0A914AD326CFF16F00B9F4F2 /* AssetsSubAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsSubAmountView.swift; sourceTree = "<group>"; };
-		0A914AD526CFF2B500B9F4F2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0A914AD326CFF16F00B9F4F2 /* PortfolioAssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAssetsView.swift; sourceTree = "<group>"; };
+		0A914AD526CFF2B500B9F4F2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,8 @@
 		0916B9C829118B7C008BB290 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
-				0A914AD526CFF2B500B9F4F2 /* ContentViewModel.swift */,
 				0A914AA026CFEF6B00B9F4F2 /* ContentView.swift */,
+				0916B9CE2911AFC7008BB290 /* ContentViewModel.swift */,
 			);
 			path = ContentView;
 			sourceTree = "<group>";
@@ -110,8 +120,27 @@
 			isa = PBXGroup;
 			children = (
 				0A914AC926CFEFCB00B9F4F2 /* AssetsAmountTitleView.swift */,
+				0916B9CC2911AEC0008BB290 /* AssetsAmountTitleViewModel.swift */,
 			);
 			path = AssetsAmountTitleView;
+			sourceTree = "<group>";
+		};
+		0916B9D22911D564008BB290 /* AssetValueDescription */ = {
+			isa = PBXGroup;
+			children = (
+				0916B9D02911C894008BB290 /* AssetValueDescriptionView.swift */,
+				0916B9D32911D571008BB290 /* AssetValueDescriptionViewModel.swift */,
+			);
+			path = AssetValueDescription;
+			sourceTree = "<group>";
+		};
+		0916B9D52911DDA2008BB290 /* PortfolioAssetsView */ = {
+			isa = PBXGroup;
+			children = (
+				0A914AD326CFF16F00B9F4F2 /* PortfolioAssetsView.swift */,
+				0916B9D62911DDB0008BB290 /* PortfolioAssetsViewModel.swift */,
+			);
+			path = PortfolioAssetsView;
 			sourceTree = "<group>";
 		};
 		0A914A9226CFEF6B00B9F4F2 = {
@@ -177,6 +206,7 @@
 		0A914AD726CFF3E200B9F4F2 /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
+				0A914AD526CFF2B500B9F4F2 /* AppState.swift */,
 				0A914ACF26CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift */,
 				0A914ACD26CFF07200B9F4F2 /* BitcoinPriceSegmentDataSource.swift */,
 				0A914AD126CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift */,
@@ -189,7 +219,8 @@
 			children = (
 				0916B9C829118B7C008BB290 /* ContentView */,
 				0916B9C929118C4C008BB290 /* AssetsAmountTitleView */,
-				0A914AD326CFF16F00B9F4F2 /* AssetsSubAmountView.swift */,
+				0916B9D52911DDA2008BB290 /* PortfolioAssetsView */,
+				0916B9D22911D564008BB290 /* AssetValueDescription */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,13 +354,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A914AD426CFF16F00B9F4F2 /* AssetsSubAmountView.swift in Sources */,
-				0A914AD626CFF2B500B9F4F2 /* ContentViewModel.swift in Sources */,
+				0916B9D72911DDB0008BB290 /* PortfolioAssetsViewModel.swift in Sources */,
+				0A914AD426CFF16F00B9F4F2 /* PortfolioAssetsView.swift in Sources */,
+				0A914AD626CFF2B500B9F4F2 /* AppState.swift in Sources */,
 				0A914ACC26CFF00A00B9F4F2 /* AssetSegmentControl.swift in Sources */,
 				0A914AD026CFF08A00B9F4F2 /* GenericAssetDataSourceProtocol.swift in Sources */,
 				098B875029116CE100D0D536 /* StockDirection.swift in Sources */,
+				0916B9CD2911AEC0008BB290 /* AssetsAmountTitleViewModel.swift in Sources */,
 				0A914AA126CFEF6B00B9F4F2 /* ContentView.swift in Sources */,
 				0A914ACE26CFF07200B9F4F2 /* BitcoinPriceSegmentDataSource.swift in Sources */,
+				0916B9CF2911AFC7008BB290 /* ContentViewModel.swift in Sources */,
+				0916B9D12911C894008BB290 /* AssetValueDescriptionView.swift in Sources */,
+				0916B9D42911D571008BB290 /* AssetValueDescriptionViewModel.swift in Sources */,
 				0A914A9F26CFEF6B00B9F4F2 /* RefactorTestApp.swift in Sources */,
 				0A914AD226CFF13900B9F4F2 /* PorfolioSegmentDataSource.swift in Sources */,
 				0A914ACA26CFEFCB00B9F4F2 /* AssetsAmountTitleView.swift in Sources */,

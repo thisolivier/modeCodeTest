@@ -4,7 +4,10 @@ import SwiftUI
 struct RefactorTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                viewModel: .init(appState: AppState.shared),
+                appState: AppState.shared
+            )
         }
     }
 }

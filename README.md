@@ -29,6 +29,5 @@ Goals:
 
 ## Reflections
 
-My goal was to restructure the app so we weren't maintaining multiple unrelated views within the same parent depending on dynamic data.
-This would involve creating atomic views with their own view models, keeping better inferface segregation.
-Unfortunately I have not been able to design child view models which maintain the dynamic properties of the original. In retrospect, loosing the reactive component and rebuilding it after sorting the view structure & POS view models could have been a better approach.
+The sharing of app state through the view layer remains a flaw in the clean-ness of the code, but not its maintainability.
+
